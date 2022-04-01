@@ -1,0 +1,92 @@
+{
+	"name": "cssinjs-px2rem",
+	"displayName": "cssinjs-px2rem",
+	"version": "0.0.2",
+	"keywords": [
+		"cssinjs",
+		"px2rem",
+		"pxtorem",
+		"px-rem",
+		"cssinjs-px2rem",
+		"cssinjs-pxtorem"
+	],
+	"description": "cssinjs中px自动转化rem的好帮手,(请确保您的vscode版本不低于1.54.0)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vscode-plugs/cssinjs-px2rem"
+	},
+	"homepage": "https://github.com/vscode-plugs/cssinjs-px2rem/blob/master/README.md",
+	"publisher": "dongdongjie",
+	"author": {
+		"name": "dongdongjie",
+		"email": "384168902@qq.com",
+		"url": "http://blog.coderdong.cn/blog/"
+	},
+	"license": "MIT",
+	"icon": "cssinjs-icon.png",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Formatters",
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescriptreact"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "cssinjs-px2rem配置",
+			"properties": {
+				"cssinjsPx2rem.designSize": {
+					"type": "number",
+					"default": 750,
+					"minimum": 1,
+					"description": "设计稿尺寸"
+				},
+				"cssinjsPx2rem.splitNumber": {
+					"type": "number",
+					"default": 75,
+					"description": "设计稿切割段数，越大越精确，（750px的设计稿分割段数为75，rootFongSize就为10px）"
+				},
+				"cssinjsPx2rem.keepFloat": {
+					"type": "number",
+					"default": 2,
+					"description": "保留小数位，默认两位"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.54.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"__metadata": {
+		"id": "4aa3454a-75b5-4607-9ddb-8961e9afb217",
+		"publisherId": "e09a9a6b-f7c5-4344-980c-c641004ac1d4",
+		"publisherDisplayName": "dongdongjie",
+		"installedTimestamp": 1637638623324
+	}
+}

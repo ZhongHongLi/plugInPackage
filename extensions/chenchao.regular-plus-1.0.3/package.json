@@ -1,0 +1,73 @@
+{
+	"name": "regular-plus",
+	"displayName": "Regular-Plus",
+	"description": "正则大全，安装即用",
+	"publisher": "chenchao",
+	"version": "1.0.3",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"keywords": [
+		"正则",
+		"校验",
+		"regular"
+	],
+	"repository": "https://github.com/wandou-cc/regular",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:regular.search"
+	],
+	"main": "./src/extension.js",
+	"icon": "icon.png",
+	"contributes": {
+		"commands": [
+			{
+				"command": "regular.search",
+				"title": "正则搜索"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "regular.search",
+				"key": "ctrl+shift+q",
+				"mac": "cmd+shift+q",
+				"when": "editorHasSelection"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.62.0",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4",
+		"@vscode/test-electron": "^1.6.2"
+	},
+	"dependencies": {
+		"@alicloud/pop-core": "^1.7.10",
+		"axios": "^0.24.0",
+		"got": "^11.8.3",
+		"js-md5": "^0.7.3",
+		"prebuild-install": "^7.0.0",
+		"qs": "^6.10.1",
+		"vscode-nls": "^5.0.0"
+	},
+	"__metadata": {
+		"id": "9e5144be-f01a-4f0c-8ff4-d77b9e97ac2e",
+		"publisherId": "13ad911e-d01c-42f7-b6ec-be44e0d2c24f",
+		"publisherDisplayName": "chenchao",
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1648023980649
+	}
+}

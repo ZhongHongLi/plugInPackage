@@ -1,0 +1,28 @@
+{
+    "Basic: vant typescript template": {
+        "prefix": "vt",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t</div>",
+            "</template>",
+            "\r<script lang=\"ts\">",
+            "import { defineComponent, toRaw, ref, Ref, omputed, reactive, UnwrapRef, } from 'vue'",
+            "\r",
+            "defineComponent({",
+				"   name: '',",
+				"   components: { BtnList },",
+				"   setup() {",
+				"        const { } = use'${1}'Hook()",
+				"        return {",
+				
+				"        }",
+				"    },",
+				"})",
+            "</script>",
+            "\r<style lang=\"scss\" scoped>",
+            "</style>"
+        ],
+        "description": "vue3 template"
+    }
+}

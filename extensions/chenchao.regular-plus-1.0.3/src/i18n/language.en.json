@@ -1,0 +1,13 @@
+{
+    "maxCharacter":"In order to ensure to find accurate error more than 10 characters, please ",
+    "later":"Matching is ~ please wait ",
+    "achieve":"Matching complete ",
+    "requireError":"Request failed, please try again ",
+    "submitBug":"To get a bug ",
+    "submitNew":"Feedback to the author ",
+    "submitNewTip":"Feedback to the authors add ",
+    "submitSuccess":"The match is successful ",
+    "betterRegularity":"More regular ",
+    "submitFeedback":"Submit recommendations ", 
+    "nullValue":"Please search conditions to match to the regular expression " 
+}

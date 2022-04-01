@@ -1,0 +1,59 @@
+{
+	"name": "vt-snippets",
+	"displayName": "Vue3 Snippets",
+	"version": "1.0.0",
+	"publisher": "zhanan",
+	"author": {
+		"name": "zhanan"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"description": "Vue3 Snippets for VS Code",
+	"icon": "images/logo.png",
+	"keywords": [
+		"vue3",
+		"snippets"
+	],
+	"galleryBanner": {
+		"color": "#549BFF",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"onLanguage:vuejs"
+	],
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"main": "./out/extension",
+	"devDependencies": {
+		"vscode": "1.40.x"
+	},
+	"license": "MIT",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./vant-ui.json"
+			},
+			{
+				"language": "html",
+				"path": "./vant-ui.json"
+			},
+			{
+				"language": "vue",
+				"path": "./vant-ui.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./vant-ui.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "03fa09e5-0be6-418a-a428-dc5118ada1d8",
+		"publisherId": "6771cbb8-51e3-4b29-bd62-bd26c5553878",
+		"publisherDisplayName": "zhanan",
+		"installedTimestamp": 1638173508875
+	}
+}
